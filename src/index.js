@@ -1,3 +1,4 @@
+const ServerlessHttp = require("serverless-http");
 const app = require("./server");
 
 const Main = async () => {
@@ -7,3 +8,5 @@ const Main = async () => {
 };
 
 Main();
+
+module.exports.handler = ServerlessHttp(app)
