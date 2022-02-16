@@ -1,5 +1,4 @@
-const app = require('./server');
-
+const app = require("./server");
 
 const Main = async () => {
   await app.listen(app.get("port"));
